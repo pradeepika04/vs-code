@@ -1,0 +1,95 @@
+body{
+    background-image: url(pictures/volks\ car.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.volkswagen-logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position:absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50) ;
+    text-align:center ;
+    color:white;
+}
+.content h1{
+    font-size: 60px;
+    color:palevioletred;
+    margin-top: 7s0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content p{
+    margin: 20px auto;
+    font-weight:  100px; 
+    line-height:  25px; 
+    color: powderblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    width: 200px;
+    padding:15px 0 ;
+    text-align: center;
+    margin: 20px 10px ;
+    border-radius: 25px;
+    font-weight:bold ;
+    border:2px solid #009688 ;
+    background: transparent;
+    color: white;
+    cursor:pointer ;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}

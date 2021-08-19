@@ -1,0 +1,33 @@
+input[type=text], input[type=date],input[type=time] {
+  width: 100%;
+  padding: 7px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  background: grey;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=text]:focus, input[type=date]:focus,input[type=time]:focus {
+  background-color:white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 200px;
+  cursor: pointer;
+  text-align: center;
+  width: 25;
+  opacity: 0.9;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+body{
+  background-image: url(pictures/microsoft-surface-laptop-3-3-2-2.jpg);
+}
